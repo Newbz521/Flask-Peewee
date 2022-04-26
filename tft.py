@@ -50,8 +50,8 @@ def welcome():
   return "Team Fight Tactics"
 
 
-@app.route('/champion/', methods=['GET', 'POST'])
-@app.route('/champion/<name>', methods=['GET', 'PUT', 'DELETE'])
+@app.route('/champ/', methods=['GET', 'POST'])
+@app.route('/champ/<name>', methods=['GET', 'PUT', 'DELETE'])
 def champs(name=None):
   if request.method == 'GET':
     if name:
